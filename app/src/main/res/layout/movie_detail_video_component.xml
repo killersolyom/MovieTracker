@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clipToPadding="false"
+    android:paddingStart="@dimen/movieDetailFragmentPaddingStart"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    tools:ignore="RtlSymmetry">
+
+    <TextView
+        android:id="@+id/movie_video_text_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/review_video_text"
+        android:textColor="@color/colorWhite"
+        android:textSize="20sp"
+        android:padding="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/video_list_grid_view"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.leanback.widget.HorizontalGridView
+        android:id="@+id/video_list_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="168dp"
+        android:clipToPadding="false"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movie_video_text_view" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

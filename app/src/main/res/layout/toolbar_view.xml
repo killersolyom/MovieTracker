@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tool:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <Button
+        android:id="@+id/main_fragment_toolbar_search"
+        android:layout_width="@dimen/mainActivityToolbarButtonSize"
+        android:layout_height="@dimen/mainActivityToolbarButtonSize"
+        android:layout_margin="15dp"
+        android:background="@drawable/search"
+        android:focusable="true"
+        android:stateListAnimator="@drawable/toolbar_item_animator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_fragment_toolbar_settings"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/main_fragment_toolbar_settings"
+        android:layout_width="@dimen/mainActivityToolbarButtonSize"
+        android:layout_height="@dimen/mainActivityToolbarButtonSize"
+        android:layout_margin="15dp"
+        android:layout_marginStart="25dp"
+        android:background="@drawable/settings"
+        android:focusable="true"
+        android:stateListAnimator="@drawable/toolbar_item_animator"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/toolbar_search_input_field"
+        android:layout_width="120dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:autofillHints="Search movie"
+        android:focusable="true"
+        android:gravity="center"
+        android:hint="@string/enter_a_keyword"
+        android:inputType="text"
+        android:textColor="@color/colorWhite"
+        app:backgroundTint="@color/colorWhite"
+        android:textCursorDrawable="@null"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/main_fragment_toolbar_search"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:targetApi="o" />
+
+    <ImageView
+        android:id="@+id/toolbar_logo"
+        android:layout_width="@dimen/genreSelectorFragmentLogoWidth"
+        android:layout_height="@dimen/genreSelectorFragmentLogoHeight"
+        android:layout_gravity="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/group_logo"
+        tool:ignore="ContentDescription" />
+
+
+</merge>

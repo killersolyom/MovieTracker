@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vertical_grid_view_layout_genre_layout"
+    android:focusable="true"
+    android:layout_width="@dimen/gridComponentLayoutSize"
+    android:layout_height="@dimen/gridComponentLayoutSize"
+    android:background="@drawable/genre_item_background_resource_selector"
+    android:foreground="@drawable/genre_item_foreground_resource_selector"
+    android:stateListAnimator="@drawable/genre_component_animator"
+    android:descendantFocusability="afterDescendants">
+
+    <ImageView
+        android:id="@+id/genre_image_view"
+        android:layout_width="@dimen/gridComponentGenreImageWidth"
+        android:layout_height="@dimen/gridComponentGenreImageHeight"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="@dimen/gridComponentGenreImageMarginStart"
+        android:layout_marginEnd="@dimen/gridComponentGenreImageMarginEnd"
+        android:layout_marginTop="@dimen/gridComponentGenreImageMarginTop"
+        android:layout_marginBottom="@dimen/gridComponentGenreImageMarginBottom"
+        android:background="@drawable/movie"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/genre_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/gridGenreTextViewPadding"
+        android:layout_marginTop="@dimen/gridGenreTextViewPadding"
+        android:layout_marginEnd="@dimen/gridGenreTextViewPadding"
+        android:layout_marginBottom="@dimen/gridGenreTextViewMarginBottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.169" />
+
+    <ImageView
+        android:id="@+id/check_image"
+        android:visibility="invisible"
+        android:layout_width="@dimen/gridComponentCheckImageWidth"
+        android:layout_height="@dimen/gridComponentCheckImageHeight"
+        android:layout_marginTop="@dimen/gridComponentCheckImageMarginTop"
+        android:layout_marginStart="@dimen/gridComponentCheckImageMarginStart"
+        android:layout_marginEnd="@dimen/gridComponentCheckImageMarginEnd"
+        android:layout_marginBottom="@dimen/gridComponentCheckImageMarginBottom"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

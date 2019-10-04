@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vertical_grid_view_layout_movie_detail"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/moveAdapterMovieCoverHeight"
+    android:clipToPadding="false"
+    android:focusable="true"
+    android:stateListAnimator="@drawable/movie_component_animator">
+
+    <com.movie.tv.View.CustomViews.ExtraMovieInfoView
+        android:id="@+id/extra_content_layout"
+        android:layout_width="@dimen/moveAdapterMovieCoverWidth"
+        android:layout_height="@dimen/moveAdapterMovieCoverHeight"
+        android:focusable="false"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/movie_cover_custom_view"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.movie.tv.View.CustomViews.MovieCoverView
+        android:id="@+id/movie_cover_custom_view"
+        android:layout_width="@dimen/moveAdapterMovieCoverWidth"
+        android:layout_height="@dimen/moveAdapterMovieCoverHeight"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/extra_content_layout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

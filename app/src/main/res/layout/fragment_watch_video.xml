@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.movie.tv.View.Fragments.WatchVideoFragment">
+
+    <com.google.android.exoplayer2.ui.PlayerView
+        android:id="@+id/video_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:fastforward_increment="30000"
+        app:repeat_toggle_modes="one"
+        app:resize_mode="fill"
+        app:rewind_increment="10000"
+        app:show_timeout="3500"
+        app:use_controller="true" />
+
+    <androidx.leanback.widget.VerticalGridView
+        android:id="@+id/exo_player_content_grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="250dp"
+        android:clipToPadding="false"
+        android:paddingTop="550dp"
+        android:paddingBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ProgressBar
+        android:id="@+id/exo_player_loading_progress"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:focusable="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/exo_player_loading_percent"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:focusable="false"
+        android:textColor="@color/colorRed"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/exo_player_loading_progress"
+        app:layout_constraintEnd_toEndOf="@+id/exo_player_loading_progress"
+        app:layout_constraintStart_toStartOf="@+id/exo_player_loading_progress"
+        app:layout_constraintTop_toTopOf="@+id/exo_player_loading_progress" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

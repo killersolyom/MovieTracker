@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="mainFragmentHolderMarginStart">50.5dp</dimen>
+    <dimen name="mainFragmentHolderMarginEnd">51dp</dimen>
+    <dimen name="genreSelectorFragmentGridViewMarginTop">188dp</dimen>
+    <dimen name="genreSelectorFragmentTitleTextViewMarginStart">167dp</dimen>
+    <dimen name="genreSelectorFragmentTitleTextViewMarginEnd">167dp</dimen>
+    <dimen name="genreSelectorFragmentTitleTextViewMarginTop">26.5dp</dimen>
+    <dimen name="genreSelectorFragmentTitleTextViewMarginBottom">14.25dp</dimen>
+    <dimen name="genreSelectorFragmentTitleTextViewFontSize">20sp</dimen>
+    <dimen name="genreSelectorFragmentLogoWidth">123dp</dimen>
+    <dimen name="genreSelectorFragmentLogoHeight">32dp</dimen>
+    <dimen name="mainFragmentHolderPaddingStart">62dp</dimen>
+    <dimen name="mainFragmentHolderPaddingEnd">62dp</dimen>
+    <dimen name="gridComponentLayoutSize">163dp</dimen>
+    <dimen name="gridComponentGenreImageWidth">125dp</dimen>
+    <dimen name="gridComponentGenreImageHeight">100dp</dimen>
+    <dimen name="gridGenreTextViewPadding">5dp</dimen>
+    <dimen name="gridGenreTextViewMarginBottom">74dp</dimen>
+    <dimen name="gridComponentGenreImageMarginBottom">31.5dp</dimen>
+    <dimen name="gridComponentGenreImageMarginStart">19dp</dimen>
+    <dimen name="gridComponentGenreImageMarginEnd">19dp</dimen>
+    <dimen name="gridComponentGenreImageMarginTop">31.5dp</dimen>
+    <dimen name="gridComponentCheckImageMarginTop">133dp</dimen>
+    <dimen name="gridComponentCheckImageMarginBottom">17dp</dimen>
+    <dimen name="gridComponentCheckImageMarginEnd">74dp</dimen>
+    <dimen name="gridComponentCheckImageMarginStart">74dp</dimen>
+    <dimen name="gridComponentCheckImageHeight">15dp</dimen>
+    <dimen name="gridComponentCheckImageWidth">15dp</dimen>
+    <dimen name="mainActivityToolbarPaddingBottom">10dp</dimen>
+    <dimen name="mainActivityToolbarPaddingTop">31dp</dimen>
+    <dimen name="mainActivityToolbarButtonSize">24dp</dimen>
+    <dimen name="moveAdapterMovieCoverWidth">108dp</dimen>
+    <dimen name="moveAdapterMovieCoverHeight">162dp</dimen>
+
+    <dimen name="movieDetailFragmentPaddingStart">28dp</dimen>
+
+
+
+</resources>

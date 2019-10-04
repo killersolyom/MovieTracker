@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/moveAdapterMovieCoverHeight"
+    android:clipToPadding="false"
+    android:focusable="false"
+    android:stateListAnimator="@drawable/movie_component_animator"
+    tool:parentTag="androidx.constraintlayout.widget.ConstraintLayout">
+
+    <ImageView
+        android:id="@+id/movie_cover_image_view"
+        android:layout_width="@dimen/moveAdapterMovieCoverWidth"
+        android:layout_height="@dimen/moveAdapterMovieCoverHeight"
+        android:scaleType="centerCrop"
+        android:focusable="false"
+        android:background="@drawable/no_cover_image"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tool:ignore="ContentDescription" />
+
+    <ProgressBar
+        android:id="@+id/loading_progress"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="56dp"
+        android:layout_weight="2"
+        android:focusable="false"
+        app:layout_constraintEnd_toEndOf="@+id/movie_cover_image_view"
+        app:layout_constraintStart_toStartOf="@+id/movie_cover_image_view"
+        app:layout_constraintTop_toTopOf="@+id/movie_cover_image_view" />
+
+    <TextView
+        android:id="@+id/error_text_view"
+        android:layout_width="@dimen/moveAdapterMovieCoverWidth"
+        android:layout_height="@dimen/moveAdapterMovieCoverWidth"
+        android:focusable="false"
+        android:padding="10dp"
+        android:textSize="12sp"
+        android:textColor="@color/colorBlack"
+        app:layout_constraintEnd_toEndOf="@+id/movie_cover_image_view"
+        app:layout_constraintStart_toStartOf="@+id/movie_cover_image_view"
+        app:layout_constraintBottom_toBottomOf="@id/movie_cover_image_view"
+        app:layout_constraintTop_toTopOf="@+id/movie_cover_image_view" />
+
+
+</merge>
